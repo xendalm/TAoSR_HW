@@ -4,25 +4,27 @@
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{graphicx}
 \usepackage{a4wide}
-\title{Reconstructed abstract of the paper ``https://doi.org/10.1007/s10994-024-06591-2''}
+\usepackage{hyperref}
+\title{Reconstructed abstract of the paper \\ ''\href{https://doi.org/10.1007/s10994-024-06591-2}{Extrapolation is not the same as interpolation}''}
 \date{}
 \begin{document}
 \maketitle
 
 \begin{abstract}
+    The paper proposes a new machine learning approach for extrapolation, focused on predicting values outside the training data range. Instead of traditional univariate models, it introduces a pairwise learning approach to predict the difference in target values between two samples, which is particularly useful for ranking tasks. Tested on various datasets, including drug design, gene expression, and material properties, the method is adaptable across domains and consistently outperforms traditional regression models, particularly in identifying top-performing and extrapolating samples.
 \end{abstract}
-\paragraph{Keywords:} 
+\paragraph{Keywords:} Extrapolation, Ranking algorithms, Drug discovery, QSAR
 
 \paragraph{Highlights:}
 \begin{enumerate}
-\item Highlight one
-\item Highlight two
-\item Highlight three
+    \item Pairwise learning model enhances extrapolation and ranking accuracy.
+    \item Utilization of ranking algorithms like TrueSkill to improve predictions for unseen data.
+    \item Outperforms standard regression methods in real-world tasks, like drug discovery and stock market analysis.
 \end{enumerate}
 
 \section{Introduction}
-
+The paper~\cite{Extrapolation} was selected for its effective approach to enhancing machine learning's ability to extrapolate beyond training data, which is essential in many fields beyond drug discovery. The proposed pairwise formulation provides a practical solution to improve the performance of traditional methods. The demonstrated results in various datasets highlight its practical value.
 
 \bibliographystyle{unsrt}
-\bibliography{Name-theArt}
+\bibliography{biblio}
 \end{document}
