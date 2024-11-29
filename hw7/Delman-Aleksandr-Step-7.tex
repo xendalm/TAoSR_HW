@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{a4wide}
+
+\title{The Impact of Synthetic Data on Text Summarization Quality}
+\date{}
+\begin{document}
+
+\maketitle
+
+This project explores the role of synthetic data in enhancing the quality of automatic text summarization. Synthetic datasets, often generated using large language models, provide a promising solution to address data scarcity and improve model generalization. However, challenges such as domain-specific applicability and evaluation complexities remain. The project will design and implement synthetic data generation techniques, evaluating their integration into summarization workflows and measuring the impact on model performance.
+
+\section{Introduction}
+
+Table~\ref{tab:intro_comparative} provides a comparative analysis of existing solutions for automatic text summarization with a focus on the role of synthetic data.
+
+\begin{table}[!htbp]
+    \centering
+    \caption{Comparative analysis of basic solution}
+    \label{tab:intro_comparative}
+    \begin{tabular}{p{5cm}|p{5cm}|p{5cm}}
+        Solution                                                                                                                                                                                                & Strengths & Weakness \\
+        \hline
+        Synthetic data generation with LLMs for text classification~\cite{Li2023}                                                                                                                               &
+        LLMs effectively generate synthetic datasets, especially in few-shot settings. Promising results for low-subjectivity tasks demonstrate its utility in specific domains.                                &
+        Synthetic data struggles with high-subjectivity tasks and lacks diversity compared to real-world data. Dependence on real examples and high computational costs limit broader adoption.                                        \\
+        \hline
+        Using SFT and RLHF for summarization in Russian~\cite{Sber2024}                                                                                                                                         &
+        Synthetic datasets improve summarization quality and address data scarcity in low-resource languages. Shows that synthetic data paired with RLHF, can align models more closely with human preferences. &
+        High-quality synthetic data requires significant resources and struggles with real-world variability. Over-reliance on synthetic data can hinder generalization and practical scalability.                                     \\
+    \end{tabular}
+\end{table}
+
+\nocite{*} % Remove this to keep the cited referernces only
+
+\bibliographystyle{unsrt}
+\bibliography{biblio}
+\end{document}
